@@ -76,7 +76,7 @@ export default function ContactForm() {
       form.reset();
 
       setTimeout(() => setSubmitted(false), 3000);
-    } catch {
+    } catch (_err) {
       setError("Something went wrong. Please try again or call us directly.");
     } finally {
       setLoading(false);
