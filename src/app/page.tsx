@@ -483,7 +483,7 @@ export default function Home() {
             </div>
           </div>
           <div className="footer-bottom">
-            <span>&copy; 2024 Elephant Cargo LLC. All rights reserved.</span>
+            <span>&copy; 2026 Elephant Cargo LLC. All rights reserved.</span>
             <span>MC# XXXXXX &middot; USDOT# XXXXXX</span>
           </div>
         </div>
