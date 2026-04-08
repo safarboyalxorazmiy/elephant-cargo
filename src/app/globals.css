@@ -378,7 +378,7 @@ a { text-decoration: none; color: inherit; transition: color var(--t-fast); }
     box-shadow: 0 12px 40px rgba(0,0,0,0.1);
 }
 .trio-card.featured {
-    background: var(--gradient-dark);
+    background: #0b0d10;
     color: var(--text-inverse);
     border-color: transparent;
 }
