@@ -374,7 +374,6 @@ a { text-decoration: none; color: inherit; transition: color var(--t-fast); }
     box-shadow: 0 4px 30px rgba(0,0,0,0.06);
 }
 .trio-card:hover {
-    transform: translateY(-6px);
     box-shadow: 0 12px 40px rgba(0,0,0,0.1);
 }
 .trio-card.featured {
