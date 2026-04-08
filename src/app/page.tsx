@@ -105,7 +105,9 @@ export default function Home() {
 
       {/* TRUSTED BY */}
       <section className="trusted">
-        <h3 className="trusted-heading reveal">TRUSTED BY</h3>
+        <div className="container">
+          <h3 className="trusted-heading">TRUSTED BY</h3>
+        </div>
         <div className="trusted-marquee">
           <div className="trusted-track">
             {/* Duplicate logos twice for seamless infinite scroll */}
