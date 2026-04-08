@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, FormEvent } from "react";
+import { useState, useRef, useEffect, FormEvent, useCallback } from "react";
 import { createPortal } from "react-dom";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://api.ottoeld.com";
@@ -17,17 +17,24 @@ const services = [
 ];
 
 function SuccessModal({ onClose }: { onClose: () => void }) {
+  const [mounted, setMounted] = useState(false);
+
+  const stableClose = useCallback(onClose, [onClose]);
+
   useEffect(() => {
+    setMounted(true);
     document.body.style.overflow = "hidden";
     const handleKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
+      if (e.key === "Escape") stableClose();
     };
     document.addEventListener("keydown", handleKey);
     return () => {
       document.body.style.overflow = "";
       document.removeEventListener("keydown", handleKey);
     };
-  }, [onClose]);
+  }, [stableClose]);
+
+  if (!mounted) return null;
 
   return createPortal(
     <div className="ec-modal-overlay" onClick={onClose}>
