@@ -29,8 +29,8 @@ export default function Home() {
         <div className="hero-visual">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/hero.jpg"
-            alt="Freight trucks on highway"
+            src="/images/reefer_wk3.jpg"
+            alt="Semi truck on highway"
           />
           <div className="hero-overlay"></div>
         </div>
