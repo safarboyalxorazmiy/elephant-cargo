@@ -153,22 +153,23 @@ a { text-decoration: none; color: inherit; transition: color var(--t-fast); }
 }
 
 .btn-gold {
-    background: var(--gradient-gold);
-    color: #fff;
-    box-shadow: 0 4px 20px var(--gold-glow);
+    background: #b8922a;
+    color: #0b0d10;
+    box-shadow: 0 4px 20px rgba(184, 146, 42, 0.25);
 }
 .btn-gold:hover {
-    box-shadow: 0 6px 30px rgba(197, 165, 90, 0.35);
+    box-shadow: 0 6px 30px rgba(184, 146, 42, 0.4);
     transform: translateY(-2px);
 }
 
 .btn-gold-outline {
     background: transparent;
-    color: var(--gold-dark);
-    border: 2px solid var(--gold);
+    color: #b8922a;
+    border: 2px solid #b8922a;
 }
 .btn-gold-outline:hover {
-    background: var(--gold-soft);
+    background: #b8922a;
+    color: #0b0d10;
 }
 
 .btn-white-outline {
