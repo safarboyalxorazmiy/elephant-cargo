@@ -95,7 +95,7 @@ a { text-decoration: none; color: inherit; transition: color var(--t-fast); }
 }
 .reveal.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
 }
 .reveal:nth-child(2) { transition-delay: 0.08s; }
 .reveal:nth-child(3) { transition-delay: 0.16s; }
@@ -1218,7 +1218,7 @@ a { text-decoration: none; color: inherit; transition: color var(--t-fast); }
 .ec-modal-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.82);
+    background: rgba(0, 0, 0, 0.55);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     display: flex;
@@ -1229,38 +1229,37 @@ a { text-decoration: none; color: inherit; transition: color var(--t-fast); }
 }
 .ec-modal {
     position: relative;
-    background: linear-gradient(160deg, #1a1a1a 0%, #222222 50%, #191919 100%);
-    border: 1px solid rgba(184, 146, 42, 0.2);
+    background: #fff;
+    border: none;
     border-radius: 20px;
     padding: 48px 40px 40px;
     max-width: 460px;
     width: 92%;
     text-align: center;
     box-shadow:
-        0 32px 80px rgba(0, 0, 0, 0.6),
-        0 0 0 1px rgba(255, 255, 255, 0.04) inset,
-        0 0 60px rgba(184, 146, 42, 0.06);
+        0 32px 80px rgba(0, 0, 0, 0.2),
+        0 0 0 1px rgba(0, 0, 0, 0.05);
     animation: ecSlideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .ec-modal-close {
     position: absolute;
     top: 16px;
     right: 16px;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     width: 36px;
     height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(0, 0, 0, 0.35);
     cursor: pointer;
     transition: all 0.2s ease;
 }
 .ec-modal-close:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.7);
 }
 .ec-modal-badge {
     display: inline-block;
@@ -1301,12 +1300,12 @@ a { text-decoration: none; color: inherit; transition: color var(--t-fast); }
     font-family: var(--font-display), sans-serif;
     font-size: 28px;
     font-weight: 700;
-    color: #fff;
+    color: #111;
     margin: 0 0 12px;
     letter-spacing: -0.3px;
 }
 .ec-modal-text {
-    color: rgba(255, 255, 255, 0.6);
+    color: #666;
     font-size: 15px;
     line-height: 1.7;
     margin: 0 0 24px;
@@ -1315,7 +1314,7 @@ a { text-decoration: none; color: inherit; transition: color var(--t-fast); }
     margin-right: auto;
 }
 .ec-modal-text strong {
-    color: rgba(255, 255, 255, 0.9);
+    color: #333;
 }
 .ec-modal-divider {
     height: 1px;
@@ -1328,7 +1327,7 @@ a { text-decoration: none; color: inherit; transition: color var(--t-fast); }
     justify-content: center;
     gap: 8px;
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.45);
+    color: #999;
     margin-bottom: 24px;
 }
 .ec-modal-contact a {

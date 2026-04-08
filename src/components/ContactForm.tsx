@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect, FormEvent, useCallback } from "react";
-import { createPortal } from "react-dom";
+import { useState, useRef, useEffect, FormEvent } from "react";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://api.ottoeld.com";
 
@@ -15,67 +14,6 @@ const services = [
   { value: "drayage", label: "Drayage / Intermodal" },
   { value: "other", label: "Other" },
 ];
-
-function SuccessModal({ onClose }: { onClose: () => void }) {
-  const [mounted, setMounted] = useState(false);
-
-  const stableClose = useCallback(onClose, [onClose]);
-
-  useEffect(() => {
-    setMounted(true);
-    document.body.style.overflow = "hidden";
-    const handleKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") stableClose();
-    };
-    document.addEventListener("keydown", handleKey);
-    return () => {
-      document.body.style.overflow = "";
-      document.removeEventListener("keydown", handleKey);
-    };
-  }, [stableClose]);
-
-  if (!mounted) return null;
-
-  return createPortal(
-    <div className="ec-modal-overlay" onClick={onClose}>
-      <div className="ec-modal" onClick={(e) => e.stopPropagation()}>
-        <button className="ec-modal-close" onClick={onClose} aria-label="Close">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M18 6 6 18" />
-            <path d="m6 6 12 12" />
-          </svg>
-        </button>
-
-        <div className="ec-modal-badge">SUCCESS</div>
-
-        <div className="ec-modal-icon">
-          <div className="ec-modal-icon-ring" />
-          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#b8922a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <path d="m9 12 2 2 4-4" />
-          </svg>
-        </div>
-
-        <h3 className="ec-modal-title">Thank You!</h3>
-        <p className="ec-modal-text">
-          Your quote request has been received.<br />
-          Our logistics team will review your shipment details and get back to you within <strong>1 business hour</strong>.
-        </p>
-
-        <div className="ec-modal-divider" />
-
-        <div className="ec-modal-contact">
-          <span>Need it sooner?</span>
-          <a href="tel:+17404759647">(740) 475-9647</a>
-        </div>
-
-        <button className="btn btn-cta ec-modal-btn" onClick={onClose}>
-          Got It
-        </button>
-      </div>
-    </div>,
-    document.body
-  );
-}
 
 export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -96,6 +34,20 @@ export default function ContactForm() {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  useEffect(() => {
+    if (showModal) {
+      document.body.style.overflow = "hidden";
+      const handleKey = (e: KeyboardEvent) => {
+        if (e.key === "Escape") setShowModal(false);
+      };
+      document.addEventListener("keydown", handleKey);
+      return () => {
+        document.body.style.overflow = "";
+        document.removeEventListener("keydown", handleKey);
+      };
+    }
+  }, [showModal]);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -256,7 +208,44 @@ export default function ContactForm() {
         </button>
       </form>
 
-      {showModal && <SuccessModal onClose={() => setShowModal(false)} />}
+      {showModal && (
+        <div className="ec-modal-overlay" onClick={() => setShowModal(false)}>
+          <div className="ec-modal" onClick={(e) => e.stopPropagation()}>
+            <button className="ec-modal-close" onClick={() => setShowModal(false)} aria-label="Close">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+
+            <div className="ec-modal-badge">SUCCESS</div>
+
+            <div className="ec-modal-icon">
+              <div className="ec-modal-icon-ring" />
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#b8922a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            </div>
+
+            <h3 className="ec-modal-title">Thank You!</h3>
+            <p className="ec-modal-text">
+              Your quote request has been received.<br />
+              Our logistics team will review your shipment details and get back to you within <strong>1 business hour</strong>.
+            </p>
+
+            <div className="ec-modal-divider" />
+
+            <div className="ec-modal-contact">
+              <span>Need it sooner?</span>
+              <a href="tel:+17404759647">(740) 475-9647</a>
+            </div>
+
+            <button className="btn btn-cta ec-modal-btn" onClick={() => setShowModal(false)}>
+              Got It
+            </button>
+          </div>
+        </div>
+      )}
     </>
   );
 }
