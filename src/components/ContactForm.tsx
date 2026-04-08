@@ -36,17 +36,12 @@ export default function ContactForm() {
   }, []);
 
   useEffect(() => {
-    if (showModal) {
-      document.body.style.overflow = "hidden";
-      const handleKey = (e: KeyboardEvent) => {
-        if (e.key === "Escape") setShowModal(false);
-      };
-      document.addEventListener("keydown", handleKey);
-      return () => {
-        document.body.style.overflow = "";
-        document.removeEventListener("keydown", handleKey);
-      };
-    }
+    if (!showModal) return;
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setShowModal(false);
+    };
+    document.addEventListener("keydown", handleKey);
+    return () => document.removeEventListener("keydown", handleKey);
   }, [showModal]);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
