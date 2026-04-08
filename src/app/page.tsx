@@ -41,10 +41,6 @@ export default function Home() {
         <div className="hero-glow hero-glow-1"></div>
         <div className="hero-glow hero-glow-2"></div>
         <div className="container hero-content">
-          <div className="hero-badge reveal">
-            <span className="hero-badge-dot"></span>
-            ELEPHANT CARGO LLC
-          </div>
           <h1 className="hero-title reveal">
             Your Trusted<br />
             <span className="hero-gold">Supply Chain</span> &<br />
