@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import ScrollReveal from "@/components/ScrollReveal";
-import { AnimatedCounter } from "@/components/CounterAnimation";
 import ContactForm from "@/components/ContactForm";
 
 const ArrowIcon = () => (
@@ -19,20 +18,6 @@ const ArrowIcon = () => (
   </svg>
 );
 
-const StepArrow = () => (
-  <div className="step-connector reveal">
-    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-      <path
-        d="M12 24h24M30 18l6 6-6 6"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  </div>
-);
-
 export default function Home() {
   return (
     <>
@@ -45,103 +30,238 @@ export default function Home() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/hero.jpg"
-            alt="Dry van semi trucks on highway"
+            alt="Freight trucks on highway"
           />
+          <div className="hero-overlay"></div>
         </div>
-        <div className="container hero-grid">
-          <div className="hero-left">
-            <div className="hero-tag reveal">Licensed &amp; Bonded Freight Broker</div>
-            <h1 className="hero-title reveal">
-              Move freight<br />
-              with <span className="hero-highlight">elephant</span><br />
-              strength.
-            </h1>
-            <p className="hero-desc reveal">
-              We connect shippers with trusted carriers across all 48 continental states.
-              Reliable capacity. Competitive rates. Every single time.
-            </p>
-            <div className="hero-actions reveal">
-              <a href="#contact" className="btn btn-cta btn-lg">
-                Get a Free Quote <ArrowIcon />
-              </a>
-              <a href="tel:+17404759647" className="btn btn-ghost btn-lg">
-                <i className="fas fa-phone-alt"></i>
-                (740) 475-9647
-              </a>
-            </div>
+        <div className="container hero-content">
+          <span className="hero-tag reveal">ELEPHANT CARGO LLC</span>
+          <h1 className="hero-title reveal">
+            YOUR TRUSTED<br />
+            <span className="hero-gold">SUPPLY CHAIN</span> AND<br />
+            <span className="hero-gold">TRANSPORTATION</span> PARTNER
+          </h1>
+          <p className="hero-desc reveal">
+            Delivering unparalleled logistics solutions with experienced professionals<br />
+            dedicated to your freight success across all 48 states.
+          </p>
+          <div className="hero-actions reveal">
+            <a href="#contact" className="btn btn-gold btn-lg">
+              Get a Free Quote <ArrowIcon />
+            </a>
+            <a href="#shippers" className="btn btn-white-outline btn-lg">
+              Learn More <ArrowIcon />
+            </a>
           </div>
-          <div className="hero-right reveal">
-            <div className="hero-metrics">
-              <div className="metric">
-                <AnimatedCounter target={48} />
-                <span className="metric-label">States<br />Covered</span>
-              </div>
-              <div className="metric">
-                <AnimatedCounter target={500} suffix="+" />
-                <span className="metric-label">Carrier<br />Partners</span>
-              </div>
-              <div className="metric">
-                <span className="metric-num">24</span>
-                <span className="metric-plus">/7</span>
-                <span className="metric-label">Always<br />Available</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="hero-scroll">
-          <div className="scroll-line"></div>
         </div>
       </section>
 
-      {/* TRUST STRIP */}
-      <section className="trust-strip">
+      {/* THREE COLUMN CTA */}
+      <section className="trio section" id="shippers">
         <div className="container">
-          <div className="trust-row">
+          <div className="trio-grid">
+            <div className="trio-card reveal">
+              <div className="trio-icon">
+                <i className="fas fa-warehouse"></i>
+              </div>
+              <h3>SHIPPERS</h3>
+              <p>
+                Need reliable capacity at competitive rates? Our team provides full truckload,
+                LTL, flatbed, reefer, and expedited services tailored to your supply chain needs.
+              </p>
+              <a href="#services" className="btn btn-gold-outline">
+                LEARN MORE <ArrowIcon />
+              </a>
+            </div>
+            <div className="trio-card featured reveal">
+              <div className="trio-icon">
+                <i className="fas fa-truck"></i>
+              </div>
+              <h3>CARRIERS</h3>
+              <p>
+                Looking for consistent loads and quick pay? Join our trusted carrier network
+                and keep your trucks moving with steady freight and professional support.
+              </p>
+              <a href="#carriers" className="btn btn-gold">
+                JOIN OUR NETWORK <ArrowIcon />
+              </a>
+            </div>
+            <div className="trio-card reveal">
+              <div className="trio-icon">
+                <i className="fas fa-building"></i>
+              </div>
+              <h3>COMPANY</h3>
+              <p>
+                Licensed and bonded freight brokerage based in Lancaster, Ohio. Built on trust,
+                driven by results, and committed to exceptional service every shipment.
+              </p>
+              <a href="#company" className="btn btn-gold-outline">
+                ABOUT US <ArrowIcon />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TRUSTED BY */}
+      <section className="trusted">
+        <div className="container">
+          <h3 className="trusted-heading reveal">TRUSTED BY</h3>
+          <div className="trusted-row reveal">
+            <div className="trusted-badge">
+              <i className="fas fa-shield-alt"></i>
+              <span>FMCSA<br />Licensed</span>
+            </div>
+            <div className="trusted-badge">
+              <i className="fas fa-leaf"></i>
+              <div>
+                <strong>SmartWay</strong>
+                <span>Transport Partner</span>
+              </div>
+            </div>
+            <div className="trusted-badge">
+              <i className="fas fa-award"></i>
+              <div>
+                <strong>BBB</strong>
+                <span>Accredited</span>
+              </div>
+            </div>
+            <div className="trusted-badge">
+              <i className="fas fa-certificate"></i>
+              <div>
+                <strong>TIA</strong>
+                <span>Member</span>
+              </div>
+            </div>
+            <div className="trusted-badge">
+              <i className="fas fa-file-contract"></i>
+              <span>Fully<br />Bonded</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section className="services section" id="services">
+        <div className="container">
+          <div className="section-intro reveal">
+            <span className="label">OUR SERVICES</span>
+            <h2 className="heading-lg">
+              Comprehensive Freight<br />Solutions
+            </h2>
+            <p className="body-text">
+              From full truckloads to temperature-controlled shipments,
+              we match every load with the right carrier.
+            </p>
+          </div>
+          <div className="services-grid">
             {[
-              ["fa-shield-alt", "FMCSA Licensed"],
-              ["fa-file-contract", "Fully Bonded"],
-              ["fa-certificate", "Fully Insured"],
-              ["fa-check-circle", "Vetted Carriers"],
-              ["fa-clock", "24/7 Dispatch"],
-            ].map(([icon, text]) => (
-              <div className="trust-chip reveal" key={text}>
-                <i className={`fas ${icon}`}></i> {text}
+              {
+                icon: "fa-truck-moving",
+                title: "Full Truckload (FTL)",
+                desc: "Dedicated truck capacity for your full shipments. Direct point-to-point delivery with maximum efficiency.",
+              },
+              {
+                icon: "fa-boxes-stacked",
+                title: "Less Than Truckload",
+                desc: "Cost-effective shipping for smaller loads without compromising delivery timelines.",
+              },
+              {
+                icon: "fa-trailer",
+                title: "Flatbed & Open Deck",
+                desc: "Heavy equipment, steel, lumber — we handle oversized and irregularly shaped cargo.",
+              },
+              {
+                icon: "fa-snowflake",
+                title: "Refrigerated (Reefer)",
+                desc: "Strict cold-chain compliance for perishable goods from pickup to delivery.",
+              },
+              {
+                icon: "fa-bolt",
+                title: "Expedited Freight",
+                desc: "Time-critical shipments with dedicated team-drivers and direct routes for fastest delivery.",
+              },
+              {
+                icon: "fa-ship",
+                title: "Drayage & Intermodal",
+                desc: "Seamless port-to-door container transport across rail, truck, and port.",
+              },
+            ].map((s) => (
+              <div className="service-card reveal" key={s.title}>
+                <div className="service-icon">
+                  <i className={`fas ${s.icon}`}></i>
+                </div>
+                <h3>{s.title}</h3>
+                <p>{s.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ABOUT */}
-      <section className="about section" id="about">
+      {/* CARRIERS SECTION */}
+      <section className="carriers-section section" id="carriers">
         <div className="container">
-          <div className="about-layout">
-            <div className="about-media reveal">
-              <div className="about-img-stack">
-                <div className="about-img-primary">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/images/about-primary.jpg"
-                    alt="Freight logistics fleet"
-                  />
-                </div>
-                <div className="about-img-float">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/images/about-float.jpg"
-                    alt="Cargo containers at port"
-                  />
-                </div>
+          <div className="carriers-layout">
+            <div className="carriers-copy reveal">
+              <span className="label">FOR CARRIERS</span>
+              <h2 className="heading-lg">
+                Partner With<br />Elephant Cargo
+              </h2>
+              <p className="body-text">
+                We value our carrier partners. Join our network and benefit from consistent
+                freight, quick pay options, and a professional team that respects your time.
+              </p>
+              <div className="carriers-benefits">
+                {[
+                  ["fa-dollar-sign", "Quick Pay Options", "Get paid faster with our flexible payment terms."],
+                  ["fa-route", "Consistent Freight", "Steady loads across your preferred lanes."],
+                  ["fa-headset", "24/7 Support", "Round-the-clock dispatch and operations support."],
+                  ["fa-shield-alt", "Professional Service", "Transparent communication and fair rates."],
+                ].map(([icon, title, desc]) => (
+                  <div className="carrier-benefit reveal" key={title}>
+                    <div className="benefit-icon">
+                      <i className={`fas ${icon}`}></i>
+                    </div>
+                    <div>
+                      <strong>{title}</strong>
+                      <span>{desc}</span>
+                    </div>
+                  </div>
+                ))}
               </div>
-              <div className="about-location-pill">
-                <i className="fas fa-map-pin"></i>
-                Lancaster, Ohio
+              <a href="#contact" className="btn btn-gold btn-lg">
+                Join Our Network <ArrowIcon />
+              </a>
+            </div>
+            <div className="carriers-media reveal">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/images/cta-carriers.jpg" alt="Carrier partner" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* COMPANY / ABOUT */}
+      <section className="company section" id="company">
+        <div className="container">
+          <div className="company-layout">
+            <div className="company-media reveal">
+              <div className="company-img-stack">
+                <div className="company-img-primary">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/about-primary.jpg" alt="Freight logistics fleet" />
+                </div>
+                <div className="company-img-float">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/images/about-float.jpg" alt="Cargo containers at port" />
+                </div>
               </div>
             </div>
-            <div className="about-copy">
-              <span className="label reveal">About Us</span>
+            <div className="company-copy">
+              <span className="label reveal">ABOUT OUR COMPANY</span>
               <h2 className="heading-lg reveal">
-                Built on trust.<br />Driven by results.
+                Built on Trust.<br />Driven by Results.
               </h2>
               <p className="body-text reveal">
                 Elephant Cargo LLC is a premier freight brokerage based in Lancaster, Ohio.
@@ -153,130 +273,44 @@ export default function Home() {
                 Whether you need full truckload, LTL, flatbed, refrigerated, or specialized hauling,
                 our team works around the clock to find the best capacity at competitive rates.
               </p>
-              <div className="about-pills reveal">
-                <div className="pill">
-                  <i className="fas fa-route"></i>
-                  <div>
-                    <strong>Strategic Routing</strong>
-                    <span>Optimized lanes for cost-effective delivery</span>
-                  </div>
+              <div className="company-stats reveal">
+                <div className="stat">
+                  <span className="stat-num">48</span>
+                  <span className="stat-label">States Covered</span>
                 </div>
-                <div className="pill">
-                  <i className="fas fa-user-tie"></i>
-                  <div>
-                    <strong>Dedicated Agents</strong>
-                    <span>Personal broker assigned to every shipment</span>
-                  </div>
+                <div className="stat">
+                  <span className="stat-num">500+</span>
+                  <span className="stat-label">Carrier Partners</span>
+                </div>
+                <div className="stat">
+                  <span className="stat-num">24/7</span>
+                  <span className="stat-label">Operations</span>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SERVICES */}
-      <section className="services section" id="services">
-        <div className="container">
-          <div className="section-intro reveal">
-            <span className="label">Our Services</span>
-            <h2 className="heading-lg">
-              Everything your<br />freight needs.
-            </h2>
-            <p className="body-text muted">
-              From full truckloads to temperature-controlled shipments, we match every load with the right carrier.
-            </p>
-          </div>
-          <div className="bento">
-            {[
-              {
-                wide: true,
-                img: "/images/service-ftl.jpg",
-                icon: "fa-truck-moving",
-                title: "Full Truckload (FTL)",
-                desc: "Dedicated truck capacity for your full shipments. Direct point-to-point delivery with maximum efficiency.",
-              },
-              {
-                img: "/images/service-ltl.jpg",
-                icon: "fa-boxes-stacked",
-                title: "Less Than Truckload",
-                desc: "Cost-effective shipping for smaller loads without compromising delivery timelines.",
-              },
-              {
-                img: "/images/service-flatbed.jpg",
-                icon: "fa-trailer",
-                title: "Flatbed & Open Deck",
-                desc: "Heavy equipment, steel, lumber — we handle oversized and irregularly shaped cargo.",
-              },
-              {
-                img: "/images/service-reefer.jpg",
-                icon: "fa-snowflake",
-                title: "Refrigerated (Reefer)",
-                desc: "Strict cold-chain compliance for perishable goods from pickup to delivery.",
-              },
-              {
-                wide: true,
-                img: "/images/service-expedited.jpg",
-                icon: "fa-bolt",
-                title: "Expedited Freight",
-                desc: "Time-critical shipments with dedicated team-drivers and direct routes for fastest possible delivery.",
-              },
-              {
-                img: "/images/service-drayage.jpg",
-                icon: "fa-ship",
-                title: "Drayage & Intermodal",
-                desc: "Seamless port-to-door container transport across rail, truck, and port.",
-              },
-            ].map((s) => (
-              <div
-                className={`bento-card${s.wide ? " bento-wide" : ""} reveal`}
-                key={s.title}
-              >
-                <div className="bento-img">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={s.img} alt={s.title} />
-                </div>
-                <div className="bento-body">
-                  <div className="bento-icon">
-                    <i className={`fas ${s.icon}`}></i>
-                  </div>
-                  <h3>{s.title}</h3>
-                  <p>{s.desc}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
 
       {/* WHY US */}
-      <section className="why section" id="why-us">
+      <section className="why section">
         <div className="container">
-          <div className="why-header">
-            <div className="why-intro reveal">
-              <span className="label light">Why Elephant Cargo</span>
-              <h2 className="heading-lg light">
-                The power behind<br />your supply chain.
-              </h2>
-            </div>
-            <div className="why-desc reveal">
-              <p>
-                We don&apos;t just move freight — we build partnerships. Every shipment is backed by
-                industry expertise, cutting-edge visibility, and a team that treats your cargo like
-                their own.
-              </p>
-            </div>
+          <div className="section-intro reveal">
+            <span className="label">WHY ELEPHANT CARGO</span>
+            <h2 className="heading-lg">
+              The Power Behind<br />Your Supply Chain
+            </h2>
           </div>
           <div className="why-grid">
             {[
-              ["01", "fa-dollar-sign", "Competitive Rates", "Our carrier network and market expertise deliver the best rates without compromising service."],
-              ["02", "fa-satellite-dish", "Real-Time Tracking", "Full visibility on every shipment with live GPS tracking and proactive status updates."],
-              ["03", "fa-headset", "24/7 Support", "Round-the-clock operations team. You're never left in the dark about your shipment."],
-              ["04", "fa-user-check", "Vetted Carriers", "Every carrier is thoroughly checked for safety records, insurance, authority, and history."],
-              ["05", "fa-file-invoice", "Quick Pay", "Fast payment for carriers. Flexible billing for shippers. Cash flows, freight moves."],
-              ["06", "fa-handshake", "Dedicated Broker", "A single point of contact who knows your business — a relationship, not a transaction."],
-            ].map(([num, icon, title, desc]) => (
-              <div className="why-card reveal" key={num}>
-                <span className="why-num">{num}</span>
+              ["fa-dollar-sign", "Competitive Rates", "Our carrier network and market expertise deliver the best rates without compromising service."],
+              ["fa-satellite-dish", "Real-Time Tracking", "Full visibility on every shipment with live GPS tracking and proactive status updates."],
+              ["fa-headset", "24/7 Support", "Round-the-clock operations team. You're never left in the dark about your shipment."],
+              ["fa-user-check", "Vetted Carriers", "Every carrier is thoroughly checked for safety records, insurance, authority, and history."],
+              ["fa-file-invoice", "Quick Pay", "Fast payment for carriers. Flexible billing for shippers. Cash flows, freight moves."],
+              ["fa-handshake", "Dedicated Broker", "A single point of contact who knows your business — a relationship, not a transaction."],
+            ].map(([icon, title, desc]) => (
+              <div className="why-card reveal" key={title}>
                 <div className="why-icon">
                   <i className={`fas ${icon}`}></i>
                 </div>
@@ -288,116 +322,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROCESS */}
-      <section className="process section" id="process">
-        <div className="container">
-          <div className="section-intro reveal">
-            <span className="label">How It Works</span>
-            <h2 className="heading-lg">
-              Three steps to<br />moving your freight.
-            </h2>
-          </div>
-          <div className="steps-row">
-            <div className="step reveal">
-              <div className="step-visual">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/process-quote.jpg"
-                  alt="Request quote"
-                />
-                <span className="step-badge">01</span>
-              </div>
-              <h3>Request a Quote</h3>
-              <p>Share your shipment details — origin, destination, commodity, weight, timeline. We respond within minutes.</p>
-            </div>
-            <StepArrow />
-            <div className="step reveal">
-              <div className="step-visual">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/process-match.jpg"
-                  alt="Match carrier"
-                />
-                <span className="step-badge">02</span>
-              </div>
-              <h3>We Match a Carrier</h3>
-              <p>Our team sources capacity from vetted carriers, selecting the best match for your load requirements.</p>
-            </div>
-            <StepArrow />
-            <div className="step reveal">
-              <div className="step-visual">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/process-deliver.jpg"
-                  alt="Track delivery"
-                />
-                <span className="step-badge">03</span>
-              </div>
-              <h3>Track &amp; Deliver</h3>
-              <p>We monitor your shipment in real-time and keep you updated from pickup through proof of delivery.</p>
-            </div>
-          </div>
-          <div className="process-cta reveal">
-            <div className="process-cta-inner">
-              <div>
-                <h3>Ready to ship?</h3>
-                <p>Get a quote in under 5 minutes. No obligations.</p>
-              </div>
-              <a href="#contact" className="btn btn-cta btn-lg">
-                Get Started <ArrowIcon />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* DUAL CTA */}
-      <section className="dual-cta section">
-        <div className="container">
-          <div className="dual-grid">
-            <div className="dual-card reveal">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/cta-shippers.jpg"
-                alt="For Shippers"
-                className="dual-bg"
-              />
-              <div className="dual-content">
-                <i className="fas fa-warehouse"></i>
-                <h3>For Shippers</h3>
-                <p>Need reliable capacity at competitive rates? Let us handle the logistics while you focus on your business.</p>
-                <a href="#contact" className="btn btn-cta">
-                  Ship With Us <i className="fas fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-            <div className="dual-card reveal">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/cta-carriers.jpg"
-                alt="For Carriers"
-                className="dual-bg"
-              />
-              <div className="dual-content">
-                <i className="fas fa-truck"></i>
-                <h3>For Carriers</h3>
-                <p>Looking for consistent loads and quick pay? Join our carrier network and keep your trucks moving.</p>
-                <a href="#contact" className="btn btn-light">
-                  Haul With Us <i className="fas fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* TESTIMONIALS */}
       <section className="reviews section">
         <div className="container">
           <div className="section-intro reveal">
-            <span className="label">Testimonials</span>
+            <span className="label">TESTIMONIALS</span>
             <h2 className="heading-lg">
-              Trusted by shippers<br />and carriers alike.
+              What Our Partners Say
             </h2>
           </div>
           <div className="reviews-grid">
@@ -449,12 +380,13 @@ export default function Home() {
         <div className="container">
           <div className="contact-layout">
             <div className="contact-info reveal">
-              <span className="label">Get in Touch</span>
+              <span className="label">GET IN TOUCH</span>
               <h2 className="heading-lg">
-                Ready to move<br />your freight?
+                Ready to Move<br />Your Freight?
               </h2>
-              <p className="body-text muted">
-                Whether you&apos;re shipping a single load or need ongoing logistics support, our team is ready to help.
+              <p className="body-text">
+                Whether you&apos;re shipping a single load or need ongoing logistics support,
+                our team is ready to help.
               </p>
               <div className="info-cards">
                 <div className="info-card">
@@ -507,8 +439,8 @@ export default function Home() {
                   className="logo-icon"
                 />
                 <div className="logo-text">
-                  <span className="logo-name">Elephant Cargo</span>
-                  <span className="logo-tagline">Freight Brokerage</span>
+                  <span className="logo-name">ELEPHANT CARGO</span>
+                  <span className="logo-tagline">SUPPLY CHAIN & TRANSPORTATION</span>
                 </div>
               </a>
               <p>
@@ -520,9 +452,9 @@ export default function Home() {
               <h4>Navigation</h4>
               <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#why-us">Why Choose Us</a></li>
+                <li><a href="#shippers">Shippers</a></li>
+                <li><a href="#carriers">Carriers</a></li>
+                <li><a href="#company">Company</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </div>

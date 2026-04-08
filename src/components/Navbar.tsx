@@ -51,18 +51,16 @@ export default function Navbar() {
             className="logo-icon"
           />
           <div className="logo-text">
-            <span className="logo-name">Elephant Cargo</span>
-            <span className="logo-tagline">Freight Brokerage</span>
+            <span className="logo-name">ELEPHANT CARGO</span>
+            <span className="logo-tagline">SUPPLY CHAIN & TRANSPORTATION</span>
           </div>
         </a>
         <ul className={`nav-links${mobileOpen ? " active" : ""}`}>
           {[
-            ["home", "Home"],
-            ["about", "About"],
-            ["services", "Services"],
-            ["why-us", "Why Us"],
-            ["process", "How It Works"],
-            ["contact", "Contact"],
+            ["shippers", "SHIPPERS"],
+            ["carriers", "CARRIERS"],
+            ["company", "COMPANY"],
+            ["contact", "CONTACT"],
           ].map(([id, label]) => (
             <li key={id}>
               <a href={`#${id}`} onClick={(e) => scrollTo(e, id)}>
@@ -72,11 +70,11 @@ export default function Navbar() {
           ))}
         </ul>
         <a
-          href="#contact"
-          className="btn btn-cta nav-cta"
-          onClick={(e) => scrollTo(e, "contact")}
+          href="tel:+17404759647"
+          className="btn btn-blue nav-cta"
         >
-          Get a Quote
+          <i className="fas fa-phone-alt"></i>
+          (740) 475-9647
         </a>
         <button
           className={`mobile-toggle${mobileOpen ? " active" : ""}`}
