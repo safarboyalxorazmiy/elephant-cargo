@@ -105,22 +105,25 @@ export default function Home() {
 
       {/* TRUSTED BY */}
       <section className="trusted">
-        <div className="container">
-          <h3 className="trusted-heading reveal">TRUSTED BY</h3>
-          <div className="trusted-row reveal">
-            {[
-              { src: "/images/trusted-premier.png", alt: "Premier Carrier" },
-              { src: "/images/trusted-smartway.png", alt: "SmartWay Transport Partner" },
-              { src: "/images/trusted-bbb.jpg", alt: "BBB Accredited Business" },
-              { src: "/images/trusted-500.png", alt: "Top Work Places 2023" },
-              { src: "/images/trusted-tia.jpg", alt: "TIA Performance Certified" },
-              { src: "/images/trusted-bb.jpg", alt: "Blue Book Since 1901" },
-            ].map((badge) => (
-              <div className="trusted-logo" key={badge.alt}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={badge.src} alt={badge.alt} />
-              </div>
-            ))}
+        <h3 className="trusted-heading reveal">TRUSTED BY</h3>
+        <div className="trusted-marquee">
+          <div className="trusted-track">
+            {/* Duplicate logos twice for seamless infinite scroll */}
+            {[0, 1].map((set) =>
+              [
+                { src: "/images/trusted-premier.png", alt: "Premier Carrier" },
+                { src: "/images/trusted-smartway.png", alt: "SmartWay Transport Partner" },
+                { src: "/images/trusted-bbb.jpg", alt: "BBB Accredited Business" },
+                { src: "/images/trusted-500.png", alt: "Top Work Places 2023" },
+                { src: "/images/trusted-tia.jpg", alt: "TIA Performance Certified" },
+                { src: "/images/trusted-bb.jpg", alt: "Blue Book Since 1901" },
+              ].map((badge) => (
+                <div className="trusted-logo" key={`${set}-${badge.alt}`}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={badge.src} alt={badge.alt} />
+                </div>
+              ))
+            )}
           </div>
         </div>
       </section>
