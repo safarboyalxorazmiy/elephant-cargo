@@ -172,7 +172,7 @@ export default function ContactForm() {
 
         <button
           type="submit"
-          className="btn btn-cta btn-full"
+          className="btn btn-gold btn-full"
           disabled={submitted || loading}
           style={submitted ? { background: "linear-gradient(135deg, #4ade80 0%, #22c55e 100%)", boxShadow: "0 2px 12px rgba(74,222,128,0.2)" } : undefined}
         >
@@ -236,7 +236,7 @@ export default function ContactForm() {
               <a href="tel:+17404759647">(740) 475-9647</a>
             </div>
 
-            <button className="btn btn-cta ec-modal-btn" onClick={() => setShowModal(false)}>
+            <button className="btn btn-gold ec-modal-btn" onClick={() => setShowModal(false)}>
               Got It
             </button>
           </div>
