@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import ScrollReveal from "@/components/ScrollReveal";
 import ContactForm from "@/components/ContactForm";
+import CustomCursor from "@/components/CustomCursor";
 
 const ArrowIcon = () => (
   <svg
@@ -21,6 +22,7 @@ const ArrowIcon = () => (
 export default function Home() {
   return (
     <>
+      <CustomCursor />
       <ScrollReveal />
       <Navbar />
 
@@ -34,15 +36,20 @@ export default function Home() {
           />
           <div className="hero-overlay"></div>
         </div>
+        <div className="hero-glow hero-glow-1"></div>
+        <div className="hero-glow hero-glow-2"></div>
         <div className="container hero-content">
-          <span className="hero-tag reveal">ELEPHANT CARGO LLC</span>
+          <div className="hero-badge reveal">
+            <span className="hero-badge-dot"></span>
+            ELEPHANT CARGO LLC
+          </div>
           <h1 className="hero-title reveal">
-            YOUR TRUSTED<br />
-            <span className="hero-gold">SUPPLY CHAIN</span> AND<br />
-            <span className="hero-gold">TRANSPORTATION</span> PARTNER
+            Your Trusted<br />
+            <span className="hero-gold">Supply Chain</span> &<br />
+            <span className="hero-gold">Transportation</span> Partner
           </h1>
           <p className="hero-desc reveal">
-            Delivering unparalleled logistics solutions with experienced professionals<br />
+            Delivering unparalleled logistics solutions with experienced professionals
             dedicated to your freight success across all 48 states.
           </p>
           <div className="hero-actions reveal">
@@ -52,6 +59,12 @@ export default function Home() {
             <a href="#shippers" className="btn btn-white-outline btn-lg">
               Learn More <ArrowIcon />
             </a>
+          </div>
+          <div className="hero-scroll-indicator reveal">
+            <div className="scroll-mouse">
+              <div className="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
           </div>
         </div>
       </section>
