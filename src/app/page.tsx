@@ -29,10 +29,12 @@ export default function Home() {
       {/* HERO */}
       <section className="hero" id="home">
         <div className="hero-visual">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/service-ftl.jpg"
-            alt="Freight trucks on highway"
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            src="/images/hero-truck.mp4"
           />
           <div className="hero-overlay"></div>
         </div>
