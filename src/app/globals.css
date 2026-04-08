@@ -425,33 +425,32 @@ a { text-decoration: none; color: inherit; transition: color var(--t-fast); }
     font-weight: 700;
     letter-spacing: 4px;
     color: var(--text-tertiary);
-    margin-bottom: 32px;
+    margin-bottom: 36px;
 }
 .trusted-row {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 48px;
+    gap: 40px;
     flex-wrap: wrap;
 }
-.trusted-badge {
+.trusted-logo {
     display: flex;
     align-items: center;
-    gap: 12px;
-    color: var(--text-secondary);
+    justify-content: center;
+    height: 70px;
 }
-.trusted-badge i {
-    font-size: 28px;
-    color: var(--gold);
+.trusted-logo img {
+    max-height: 70px;
+    max-width: 140px;
+    object-fit: contain;
+    filter: grayscale(0.3);
+    opacity: 0.85;
+    transition: all var(--t-fast);
 }
-.trusted-badge span {
-    font-size: 13px;
-    line-height: 1.3;
-}
-.trusted-badge strong {
-    display: block;
-    font-size: 15px;
-    color: var(--text-primary);
+.trusted-logo img:hover {
+    filter: grayscale(0);
+    opacity: 1;
 }
 
 /* ===== SERVICES ===== */

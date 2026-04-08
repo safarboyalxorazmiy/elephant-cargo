@@ -108,35 +108,19 @@ export default function Home() {
         <div className="container">
           <h3 className="trusted-heading reveal">TRUSTED BY</h3>
           <div className="trusted-row reveal">
-            <div className="trusted-badge">
-              <i className="fas fa-shield-alt"></i>
-              <span>FMCSA<br />Licensed</span>
-            </div>
-            <div className="trusted-badge">
-              <i className="fas fa-leaf"></i>
-              <div>
-                <strong>SmartWay</strong>
-                <span>Transport Partner</span>
+            {[
+              { src: "/images/trusted-premier.png", alt: "Premier Carrier" },
+              { src: "/images/trusted-smartway.png", alt: "SmartWay Transport Partner" },
+              { src: "/images/trusted-bbb.jpg", alt: "BBB Accredited Business" },
+              { src: "/images/trusted-500.png", alt: "Top Work Places 2023" },
+              { src: "/images/trusted-tia.jpg", alt: "TIA Performance Certified" },
+              { src: "/images/trusted-bb.jpg", alt: "Blue Book Since 1901" },
+            ].map((badge) => (
+              <div className="trusted-logo" key={badge.alt}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={badge.src} alt={badge.alt} />
               </div>
-            </div>
-            <div className="trusted-badge">
-              <i className="fas fa-award"></i>
-              <div>
-                <strong>BBB</strong>
-                <span>Accredited</span>
-              </div>
-            </div>
-            <div className="trusted-badge">
-              <i className="fas fa-certificate"></i>
-              <div>
-                <strong>TIA</strong>
-                <span>Member</span>
-              </div>
-            </div>
-            <div className="trusted-badge">
-              <i className="fas fa-file-contract"></i>
-              <span>Fully<br />Bonded</span>
-            </div>
+            ))}
           </div>
         </div>
       </section>
