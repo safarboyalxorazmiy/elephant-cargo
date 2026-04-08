@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "nextjs-dev",
+      "runtimeExecutable": "/bin/bash",
+      "runtimeArgs": ["-c", "cd /Users/user/Desktop/elephant-cargo && PATH=/Users/user/.nvm/versions/node/v22.22.0/bin:$PATH exec npx next dev --port ${PORT:-3000}"],
+      "autoPort": true,
+      "port": 3000
+    }
+  ]
+}
