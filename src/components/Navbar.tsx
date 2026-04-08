@@ -71,7 +71,7 @@ export default function Navbar() {
         </ul>
         <a
           href="tel:+17404759647"
-          className="btn btn-blue nav-cta"
+          className="btn btn-gold nav-cta"
         >
           <i className="fas fa-phone-alt"></i>
           (740) 475-9647
