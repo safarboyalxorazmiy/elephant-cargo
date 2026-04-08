@@ -352,10 +352,12 @@ a { text-decoration: none; color: inherit; transition: color var(--t-fast); }
 
 /* ===== TRIO SECTION ===== */
 .trio {
-    background: var(--bg);
+    background: var(--bg-dark);
+    background-image: linear-gradient(135deg, #0d1b2a 0%, #152a43 100%);
     margin-top: -60px;
     position: relative;
     z-index: 2;
+    padding-top: calc(var(--section-pad) + 60px);
     padding-bottom: var(--section-pad);
 }
 .trio-grid {
@@ -364,22 +366,23 @@ a { text-decoration: none; color: inherit; transition: color var(--t-fast); }
     gap: 24px;
 }
 .trio-card {
-    background: var(--bg);
-    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
     border-radius: var(--radius-lg);
     padding: 48px 32px;
     text-align: center;
     transition: all var(--t-med);
-    box-shadow: 0 4px 30px rgba(0,0,0,0.06);
+    backdrop-filter: blur(10px);
 }
 .trio-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(197, 165, 90, 0.3);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.3);
 }
 .trio-card.featured {
-    background: var(--gradient-dark);
-    color: var(--text-inverse);
-    border-color: transparent;
+    background: rgba(197, 165, 90, 0.1);
+    border-color: var(--gold);
 }
 .trio-card.featured p { color: rgba(255,255,255,0.7); }
 .trio-icon {
@@ -391,11 +394,11 @@ a { text-decoration: none; color: inherit; transition: color var(--t-fast); }
     justify-content: center;
     margin: 0 auto 24px;
     font-size: 24px;
-    background: var(--gold-soft);
-    color: var(--gold);
+    background: rgba(197, 165, 90, 0.15);
+    color: var(--gold-light);
 }
 .trio-card.featured .trio-icon {
-    background: rgba(197, 165, 90, 0.2);
+    background: rgba(197, 165, 90, 0.25);
     color: var(--gold-light);
 }
 .trio-card h3 {
@@ -404,11 +407,12 @@ a { text-decoration: none; color: inherit; transition: color var(--t-fast); }
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 16px;
+    color: #fff;
 }
 .trio-card p {
     font-size: 15px;
     line-height: 1.7;
-    color: var(--text-secondary);
+    color: rgba(255,255,255,0.6);
     margin-bottom: 28px;
 }
 
