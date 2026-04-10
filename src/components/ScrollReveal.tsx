@@ -1,10 +1,12 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function ScrollReveal() {
+  const pathname = usePathname();
+
   useEffect(() => {
-    const reveals = document.querySelectorAll(".reveal");
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -14,11 +16,24 @@ export default function ScrollReveal() {
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
     );
-    reveals.forEach((el) => observer.observe(el));
-    return () => observer.disconnect();
-  }, []);
+
+    // Defer observation until after the new route has committed its DOM.
+    // Without this, Link-based client-side navigation leaves the new page's
+    // `.reveal` elements unobserved and they stay invisible forever.
+    const rafId = requestAnimationFrame(() => {
+      const reveals = document.querySelectorAll<HTMLElement>(
+        ".reveal:not(.visible)"
+      );
+      reveals.forEach((el) => observer.observe(el));
+    });
+
+    return () => {
+      cancelAnimationFrame(rafId);
+      observer.disconnect();
+    };
+  }, [pathname]);
 
   return null;
 }
