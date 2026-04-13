@@ -19,7 +19,7 @@ const ArrowIcon = () => (
 );
 
 export const metadata: Metadata = {
-  title: "About Elephant Cargo — Lancaster, OH Freight Brokerage",
+  title: "About Elephant Cargo | Lancaster, OH Freight Brokerage",
   description:
     "Licensed and bonded freight brokerage from Lancaster, Ohio. Meet the team, the story, and the values that drive every load we move across the 48 states.",
 };
@@ -48,7 +48,7 @@ const VALUES = [
   {
     icon: "fa-shield-halved",
     title: "We Own It",
-    desc: "When something goes sideways — and in freight, something always does — we don&apos;t blame the carrier, the shipper, or the weather. We own it and we fix it.",
+    desc: "When something goes sideways, and in freight something always does, we don&apos;t blame the carrier, the shipper, or the weather. We own it and we fix it.",
   },
   {
     icon: "fa-eye",
@@ -58,7 +58,7 @@ const VALUES = [
   {
     icon: "fa-heart",
     title: "Care Like It&apos;s Ours",
-    desc: "Every load represents someone&apos;s business, someone&apos;s customer, someone&apos;s paycheck. We treat it like our own — because in our heads, it is.",
+    desc: "Every load represents someone&apos;s business, someone&apos;s customer, someone&apos;s paycheck. We treat it like our own, because in our heads, it is.",
   },
 ];
 
@@ -86,7 +86,7 @@ const TIMELINE = [
   {
     year: "2026",
     title: "Next Chapter",
-    desc: "New office, growing team, expanded technology — still the same phone number, same people, same commitment to every shipper and every driver.",
+    desc: "New office, growing team, expanded technology. Still the same phone number, same people, same commitment to every shipper and every driver.",
   },
 ];
 
@@ -112,7 +112,7 @@ export default function AboutPage() {
           <p className="page-hero-desc reveal">
             We&apos;re a Lancaster, Ohio-based freight brokerage running on an old-school
             idea: if you treat shippers and carriers like people, they&apos;ll stick around
-            for the long haul. That idea has carried us for seven years — and counting.
+            for the long haul. That idea has carried us for seven years and counting.
           </p>
         </div>
       </section>
@@ -140,7 +140,7 @@ export default function AboutPage() {
               </h2>
               <p className="body-text reveal">
                 Elephant Cargo was founded by freight people who spent too many years on
-                the other side of the desk — chasing down lost trucks, re-explaining
+                the other side of the desk. Chasing down lost trucks, re-explaining
                 lanes to the fourth rep in four months, and waiting on quotes that
                 never came. We knew brokerage didn&apos;t have to work like that.
               </p>
@@ -152,7 +152,7 @@ export default function AboutPage() {
               </p>
               <p className="body-text reveal">
                 Today, Elephant Cargo connects shippers with a vetted carrier network
-                covering all 48 continental states — and the team keeps growing because
+                covering all 48 continental states, and the team keeps growing because
                 the mission hasn&apos;t changed: freight done the right way, every load,
                 every day.
               </p>
@@ -216,7 +216,7 @@ export default function AboutPage() {
               Seven Years of<br />Moving Forward
             </h2>
             <p className="body-text">
-              From a single desk in Lancaster to a 48-state network — here&apos;s how
+              From a single desk in Lancaster to a 48-state network. Here&apos;s how
               Elephant Cargo has grown, one handshake at a time.
             </p>
           </div>

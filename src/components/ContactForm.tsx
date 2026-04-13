@@ -174,7 +174,7 @@ export default function ContactForm() {
           type="submit"
           className="btn btn-gold btn-full"
           disabled={submitted || loading}
-          style={submitted ? { background: "linear-gradient(135deg, #4ade80 0%, #22c55e 100%)", boxShadow: "0 2px 12px rgba(74,222,128,0.2)" } : undefined}
+          style={submitted ? { background: "linear-gradient(135deg, #4ade80 0%, #22c55e 100%)" } : undefined}
         >
           {loading ? (
             <span className="ec-spinner" />

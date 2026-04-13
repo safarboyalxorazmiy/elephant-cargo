@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Get a Free Freight Quote in Under an Hour",
+  title: "Contact Us | Get a Free Freight Quote in Under an Hour",
   description:
     "Contact Elephant Cargo for a free freight quote. 24/7 dispatch, one-hour response, licensed and bonded. Call (740) 475-9647 or submit our quote form.",
 };
@@ -14,15 +14,15 @@ const MINI_FAQ = [
   },
   {
     q: "Do I need an account to get a quote?",
-    a: "Nope. Submit the form, call, or email — we&apos;ll quote your load whether you&apos;re a first-time shipper or a long-time partner.",
+    a: "Nope. Submit the form, call, or email. We&apos;ll quote your load whether you&apos;re a first-time shipper or a long-time partner.",
   },
   {
     q: "Can I call after hours?",
-    a: "Yes. Our dispatch line runs 24/7/365. For emergency freight or in-transit issues, call anytime — a real person will pick up.",
+    a: "Yes. Our dispatch line runs 24/7/365. For emergency freight or in-transit issues, call anytime and a real person will pick up.",
   },
   {
     q: "Do you work with carriers too?",
-    a: "Absolutely. Carriers can call the same number, send setup paperwork to accounting@elephantcargo.com, or visit the carriers page to get started.",
+    a: "Absolutely. Carriers can call the same number, send setup paperwork to bilol@elephantcargollc.com, or visit the carriers page to get started.",
   },
 ];
 
@@ -47,7 +47,7 @@ export default function ContactPage() {
           </h1>
           <p className="page-hero-desc reveal">
             Need a quote? Setting up as a carrier? Got a 3 AM emergency? Pick the channel
-            that works for you — a real human responds within one business hour, usually
+            that works for you. A real human responds within one business hour, usually
             much faster.
           </p>
           <div className="contact-quick-actions reveal">
@@ -58,11 +58,11 @@ export default function ContactPage() {
                 <span>(740) 475-9647</span>
               </div>
             </a>
-            <a href="mailto:info@elephantcargo.com" className="quick-action">
+            <a href="mailto:bilol@elephantcargollc.com" className="quick-action">
               <i className="fas fa-envelope"></i>
               <div>
                 <strong>Email Us</strong>
-                <span>info@elephantcargo.com</span>
+                <span>bilol@elephantcargollc.com</span>
               </div>
             </a>
             <div className="quick-action">
@@ -86,7 +86,7 @@ export default function ContactPage() {
                 We&apos;re Here<br />When You Need Us
               </h2>
               <p className="body-text">
-                Pick the channel that works for you — form, phone, or email. Every
+                Pick the channel that works for you: form, phone, or email. Every
                 message lands on a real desk at our Lancaster office and gets a response
                 from a real person.
               </p>
@@ -111,7 +111,7 @@ export default function ContactPage() {
                   <i className="fas fa-envelope"></i>
                   <div>
                     <strong>Email</strong>
-                    <p><a href="mailto:info@elephantcargo.com">info@elephantcargo.com</a></p>
+                    <p><a href="mailto:bilol@elephantcargollc.com">bilol@elephantcargollc.com</a></p>
                     <p className="info-small">Quotes, carrier setup, questions</p>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export default function ContactPage() {
           </div>
           <div className="map-wrap reveal">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3082.0!2d-82.58!3d39.72!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDQzJzEyLjAiTiA4MsKwMzQnNDguMCJX!5e0!3m2!1sen!2sus!4v1700000000000"
+              src="https://maps.google.com/maps?q=Elephant+Cargo+LLC,+2318+E+Main+St,+Lancaster,+OH+43130&t=&z=15&ie=UTF8&iwloc=B&output=embed"
               width="100%"
               height="420"
               style={{ border: 0, borderRadius: "20px" }}
@@ -172,19 +172,19 @@ export default function ContactPage() {
             <span className="label">CREDENTIALS</span>
             <h2 className="heading-lg">Licensed &amp; Bonded</h2>
             <p className="body-text">
-              Fully compliant freight brokerage authorized by the FMCSA — the paperwork
+              Fully compliant freight brokerage authorized by the FMCSA. The paperwork
               that matters, on file and in good standing.
             </p>
           </div>
           <div className="credentials-grid">
             <div className="credential tilt-card reveal">
               <i className="fas fa-id-badge"></i>
-              <strong>MC# XXXXXX</strong>
+              <strong>MC# 1375669</strong>
               <span>Motor Carrier Authority</span>
             </div>
             <div className="credential tilt-card reveal">
               <i className="fas fa-truck"></i>
-              <strong>USDOT# XXXXXX</strong>
+              <strong>USDOT# 3811403</strong>
               <span>US DOT Registration</span>
             </div>
             <div className="credential tilt-card reveal">

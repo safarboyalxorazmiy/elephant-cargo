@@ -18,7 +18,7 @@ const ArrowIcon = () => (
 );
 
 export const metadata: Metadata = {
-  title: "Carrier Network — Quick Pay, Consistent Freight, Fair Rates",
+  title: "Carrier Network: Quick Pay, Consistent Freight, Fair Rates",
   description:
     "Haul for a broker that treats carriers like partners. Same-day quick pay, fair negotiation, 24/7 dispatch, and steady freight on the lanes you actually run.",
 };
@@ -54,9 +54,9 @@ const PAY_OPTIONS = [
     fee: "0%",
     highlight: false,
     features: [
-      "Zero fees — traditional 30-day terms",
+      "Zero fees with traditional 30-day terms",
       "Paid on clean paperwork",
-      "Check or ACH — your choice",
+      "Check or ACH, your choice",
       "Factoring friendly",
     ],
   },
@@ -69,27 +69,27 @@ const FAQ = [
   },
   {
     q: "How quickly can I get approved?",
-    a: "Most carriers are approved within 24 hours of submitting a complete packet. Rush approvals available — just let us know when you send the paperwork and we&apos;ll prioritize it.",
+    a: "Most carriers are approved within 24 hours of submitting a complete packet. Rush approvals are available. Just let us know when you send the paperwork and we&apos;ll prioritize it.",
   },
   {
     q: "Do you work with new authorities?",
-    a: "Absolutely. We work with carriers whose authority is less than 6 months old. Our onboarding team will guide you through any additional verification steps and help you start running loads quickly.",
+    a: "We require a minimum of 9 months active authority. Our onboarding team will guide you through verification steps and help you start running loads quickly.",
   },
   {
     q: "What are your insurance requirements?",
-    a: "Minimum $1M auto liability and $100K cargo coverage. Hazmat and high-value freight may require higher limits — we&apos;ll let you know before dispatch if a specific load has stricter requirements.",
+    a: "Minimum $1M auto liability and $100K cargo coverage. Hazmat and high-value freight may require higher limits. We&apos;ll let you know before dispatch if a specific load has stricter requirements.",
   },
   {
     q: "How do I submit invoices and get paid?",
-    a: "Email a signed BOL/POD and your invoice to accounting@elephantcargo.com, or upload them through our carrier portal. Quick pay is processed the same day we receive clean paperwork.",
+    a: "Email a signed BOL/POD and your invoice to bilol@elephantcargollc.com, or upload them through our carrier portal. Quick pay is processed the same day we receive clean paperwork.",
   },
   {
     q: "Can I decline a load offer?",
-    a: "Always. You&apos;re an independent partner — we offer, you decide. No pressure, no penalties, no getting cut out of future freight for passing on a load that doesn&apos;t work for you.",
+    a: "Always. You&apos;re an independent partner. We offer, you decide. No pressure, no penalties, no getting cut out of future freight for passing on a load that doesn&apos;t work for you.",
   },
   {
     q: "Do you accept factoring companies?",
-    a: "Yes — we&apos;re set up with all the major factoring companies and happy to work with new ones. Send us a Notice of Assignment during onboarding and we&apos;ll take care of the rest.",
+    a: "Yes. We&apos;re set up with all the major factoring companies and happy to work with new ones. Send us a Notice of Assignment during onboarding and we&apos;ll take care of the rest.",
   },
   {
     q: "What kind of freight do you typically move?",
@@ -119,7 +119,7 @@ export default function CarriersPage() {
           <p className="page-hero-desc reveal">
             We&apos;re not in the business of grinding carriers on rates or ghosting you
             when there&apos;s a problem. We&apos;re in the business of keeping your trailer
-            loaded with freight that pays — on time, every time.
+            loaded with freight that pays on time, every time.
           </p>
           <div className="page-hero-actions reveal">
             <Link href="/contact" className="btn btn-gold btn-lg glow-btn">
@@ -141,14 +141,14 @@ export default function CarriersPage() {
               Why Drivers Stay<br />With Elephant Cargo
             </h2>
             <p className="body-text">
-              We&apos;ve heard every complaint about brokers — cheap rates, slow pay,
+              We&apos;ve heard every complaint about brokers: cheap rates, slow pay,
               dispatchers who ghost you. Here&apos;s how we do it differently.
             </p>
           </div>
           <div className="why-grid">
             {[
               ["fa-dollar-sign", "Same-Day Quick Pay", "Sign the POD, get paid today. ACH direct to your account with no minimums and no enrollment fees."],
-              ["fa-route", "Lanes You Actually Run", "We build around your home base and preferred freight — not whatever cheap load we need covered this hour."],
+              ["fa-route", "Lanes You Actually Run", "We build around your home base and preferred freight, not whatever cheap load we need covered this hour."],
               ["fa-headset", "24/7 Live Dispatch", "Breakdown at 3 AM? Weather delay on a Sunday? Our team is on the phone, helping you solve it."],
               ["fa-handshake", "Honest Negotiation", "We quote the rate we can pay and let you decide. No lowball games, no bait-and-switch, no wasted phone calls."],
               ["fa-file-signature", "Fast, Paperless Setup", "Digital carrier packet, e-signature rate cons, and same-day onboarding. Hauling your first load within 24 hours."],
@@ -244,7 +244,7 @@ export default function CarriersPage() {
                 icon: "fa-id-card",
                 title: "Active MC Authority",
                 value: "Required",
-                desc: "Active operating authority in good standing with FMCSA — any age accepted.",
+                desc: "Active operating authority in good standing with FMCSA. Minimum 9 months active authority required.",
               },
               {
                 icon: "fa-star",
@@ -277,7 +277,7 @@ export default function CarriersPage() {
           </div>
           <div className="process-grid">
             {[
-              { step: "01", icon: "fa-file-lines", title: "Submit Carrier Packet", desc: "Send us your MC authority, W-9, COI, and voided check. Our team reviews within one business day — rush approvals on request." },
+              { step: "01", icon: "fa-file-lines", title: "Submit Carrier Packet", desc: "Send us your MC authority, W-9, COI, and voided check. Our team reviews within one business day. Rush approvals on request." },
               { step: "02", icon: "fa-magnifying-glass-chart", title: "Tell Us Your Lanes", desc: "Share your preferred lanes, equipment, and home base. We match you with the loads that fit how you actually run." },
               { step: "03", icon: "fa-truck-fast", title: "Dispatch &amp; Deliver", desc: "Digital rate con, GPS tracking, 24/7 dispatch, and quick pay. Built to keep your wheels turning and your invoices paid." },
             ].map((p) => (
@@ -302,7 +302,7 @@ export default function CarriersPage() {
             <h2 className="heading-lg">Common Questions</h2>
             <p className="body-text">
               Straight answers to the questions we get most often. Don&apos;t see yours?
-              Call us — we&apos;ll talk you through it.
+              Call us and we&apos;ll talk you through it.
             </p>
           </div>
           <div className="faq-grid">
@@ -326,8 +326,8 @@ export default function CarriersPage() {
             <div>
               <h2 className="heading-lg">Ready to Roll With Us?</h2>
               <p className="body-text">
-                Get set up in 24 hours and start hauling freight that fits your operation
-                — with a broker that respects your time and pays you fast.
+                Get set up in 24 hours and start hauling freight that fits your operation,
+                with a broker that respects your time and pays you fast.
               </p>
             </div>
             <div className="cta-banner-actions">

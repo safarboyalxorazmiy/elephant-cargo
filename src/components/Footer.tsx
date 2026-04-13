@@ -50,18 +50,16 @@ export default function Footer() {
             <ul className="footer-contact-list">
               <li><i className="fas fa-map-marker-alt"></i> 2318 E Main St, Lancaster, OH</li>
               <li><i className="fas fa-phone-alt"></i> <a href="tel:+17404759647">(740) 475-9647</a></li>
-              <li><i className="fas fa-envelope"></i> <a href="mailto:info@elephantcargo.com">info@elephantcargo.com</a></li>
+              <li><i className="fas fa-envelope"></i> <a href="mailto:bilol@elephantcargollc.com">bilol@elephantcargollc.com</a></li>
             </ul>
             <div className="footer-social">
-              <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
-              <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/bilol-tulkunov-500233379" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
             </div>
           </div>
         </div>
         <div className="footer-bottom">
           <span>&copy; 2026 Elephant Cargo LLC. All rights reserved.</span>
-          <span>MC# XXXXXX &middot; USDOT# XXXXXX</span>
+          <span>MC# 1375669 &middot; USDOT# 3811403</span>
         </div>
       </div>
     </footer>

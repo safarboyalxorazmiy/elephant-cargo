@@ -18,7 +18,7 @@ const ArrowIcon = () => (
   </svg>
 );
 
-// Photo set — fresh imagery pulled from Unsplash
+// Photo set. Fresh imagery pulled from Unsplash.
 const IMG = {
   carriersCta: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
 };
@@ -41,9 +41,9 @@ export default function Home() {
             <span className="hero-gold">Their Only</span> Customer
           </h1>
           <p className="hero-desc reveal">
-            Elephant Cargo is the freight brokerage shippers call first and carriers stay
-            loyal to — a 48-state network run by real dispatchers who answer the phone,
-            solve the problem, and move your load.
+            We&apos;re the freight brokerage shippers call first and carriers stay loyal
+            to. A 48-state network run by real dispatchers who answer the phone, solve
+            the problem, and move your load.
           </p>
           <div className="hero-actions reveal">
             <Link href="/contact" className="btn btn-gold btn-lg glow-btn">
@@ -96,7 +96,7 @@ export default function Home() {
             </h2>
             <p className="body-text">
               Whether you&apos;re shipping freight or hauling it, you deserve a partner who
-              treats your business like it matters — because it does.
+              treats your business like it matters. Because it does.
             </p>
           </div>
           <div className="trio-grid">
@@ -120,7 +120,7 @@ export default function Home() {
               <h3>CARRIERS</h3>
               <p>
                 Consistent freight on the lanes you run, quick pay when you need it, and
-                dispatchers who pick up on the first ring — day, night, or weekend.
+                dispatchers who pick up on the first ring. Day, night, or weekend.
               </p>
               <Link href="/carriers" className="btn btn-gold">
                 JOIN OUR NETWORK <ArrowIcon />
@@ -187,7 +187,7 @@ export default function Home() {
               {
                 icon: "fa-truck-moving",
                 title: "Full Truckload",
-                desc: "Dedicated dry van and specialized capacity for point-to-point delivery — no stops, no delays, no surprises.",
+                desc: "Dedicated dry van and specialized capacity for point-to-point delivery. No stops, no delays, no surprises.",
                 href: "/services#ftl",
               },
               {
@@ -211,7 +211,7 @@ export default function Home() {
               {
                 icon: "fa-bolt",
                 title: "Expedited",
-                desc: "Sprinter vans to team-driver dry vans — when you absolutely have to be there yesterday. 24/7 dispatch on every load.",
+                desc: "Sprinter vans to team-driver dry vans, for when you absolutely have to be there yesterday. 24/7 dispatch on every load.",
                 href: "/services#expedited",
               },
               {
@@ -274,7 +274,7 @@ export default function Home() {
               Big Enough to Deliver.<br />Small Enough to Care.
             </h2>
             <p className="body-text">
-              We&apos;re not the biggest broker in America — and that&apos;s the point. Every
+              We&apos;re not the biggest broker in America, and that&apos;s the point. Every
               load gets the attention of a real human being who owns the outcome.
             </p>
           </div>
@@ -282,10 +282,10 @@ export default function Home() {
             {[
               ["fa-phone-volume", "The Phone Gets Answered", "First ring, every time. Including 2 AM, weekends, and holidays. Real humans, not IVR menus or chatbots."],
               ["fa-satellite-dish", "Live Visibility", "GPS tracking on every load, automated milestone alerts, and a team that calls you before problems become problems."],
-              ["fa-user-check", "Carriers We&apos;d Ride With", "Every carrier in our network is vetted for authority, insurance, safety scores, and service history — no exceptions."],
-              ["fa-shield-halved", "Accountability Built In", "When something goes sideways, we own it. No blame-shifting, no excuses — just a phone call with the plan to make it right."],
+              ["fa-user-check", "Carriers We&apos;d Ride With", "Every carrier in our network is vetted for authority, insurance, safety scores, and service history. No exceptions."],
+              ["fa-shield-halved", "Accountability Built In", "When something goes sideways, we own it. No blame-shifting, no excuses. Just a phone call with the plan to make it right."],
               ["fa-bolt", "Fast Everything", "Quote in 60 minutes or less. Carrier dispatched within the hour. POD processed same day. Quick pay available."],
-              ["fa-handshake", "Partnership, Not Transaction", "A single dedicated broker who learns your lanes, your rates, and your preferences — so you stop explaining yourself every load."],
+              ["fa-handshake", "Partnership, Not Transaction", "A single dedicated broker who learns your lanes, your rates, and your preferences, so you stop explaining yourself every load."],
             ].map(([icon, title, desc]) => (
               <div className="why-card tilt-card reveal" key={title}>
                 <div className="why-icon">
@@ -320,7 +320,7 @@ export default function Home() {
                 name: "Ricky T.",
                 role: "Owner-Operator, 2-Truck Fleet",
                 quote:
-                  "Quick pay is actually quick — I&apos;ve had money in my account the same day I sent in a POD. Fair rates, no haggling games, and dispatchers who remember my name. Hard to find that anymore.",
+                  "Quick pay is actually quick. I&apos;ve had money in my account the same day I sent in a POD. Fair rates, no haggling games, and dispatchers who remember my name. Hard to find that anymore.",
               },
               {
                 initials: "SK",
@@ -360,7 +360,7 @@ export default function Home() {
                 Haul With a Broker<br />That Has Your Back
               </h2>
               <p className="body-text">
-                We treat carriers like the backbone of our business — because they are. If
+                We treat carriers like the backbone of our business, because they are. If
                 you run safe, deliver on time, and communicate like a pro, we&apos;ll keep
                 your trailer loaded.
               </p>
@@ -407,8 +407,8 @@ export default function Home() {
                 Let&apos;s Move Your<br />Freight Forward.
               </h2>
               <p className="body-text">
-                Tell us about your load and we&apos;ll get a real quote back to you — with
-                a real carrier lined up — in under an hour.
+                Tell us about your load and we&apos;ll get a real quote back to you, with
+                a real carrier lined up, in under an hour.
               </p>
               <div className="info-cards">
                 <div className="info-card">
@@ -429,7 +429,7 @@ export default function Home() {
                   <i className="fas fa-envelope"></i>
                   <div>
                     <strong>Email</strong>
-                    <p><a href="mailto:info@elephantcargo.com">info@elephantcargo.com</a></p>
+                    <p><a href="mailto:bilol@elephantcargollc.com">bilol@elephantcargollc.com</a></p>
                   </div>
                 </div>
                 <div className="info-card">

@@ -49,7 +49,7 @@ const CheckIcon = () => (
 );
 
 export const metadata: Metadata = {
-  title: "Shipper Solutions — Capacity You Can Count On",
+  title: "Shipper Solutions: Capacity You Can Count On",
   description:
     "Freight brokerage built for shippers. Vetted carriers, live visibility, real people on the phone, and a team that treats your supply chain like it matters.",
 };
@@ -68,14 +68,14 @@ const INDUSTRIES = [
 const PROBLEMS = [
   "Broker doesn&apos;t return calls until the load is already late",
   "Quote comes back 24 hours later with three asterisks",
-  "No tracking — you call the driver, driver calls dispatch, dispatch calls you",
+  "No tracking. You call the driver, driver calls dispatch, dispatch calls you",
   "Cheapest carrier on the load, surprise breakdown on delivery day",
   "A different rep every load, re-explaining your business each time",
   "Damage claims turn into weeks of finger-pointing",
 ];
 
 const SOLUTIONS = [
-  "Dedicated broker who answers the phone on the first ring — every time",
+  "Dedicated broker who answers the phone on the first ring, every time",
   "Real quote in 60 minutes or less with no hidden fees",
   "Live GPS tracking and proactive updates before problems happen",
   "Every carrier vetted for insurance, safety, and service history",
@@ -105,7 +105,7 @@ export default function ShippersPage() {
           <p className="page-hero-desc reveal">
             Tired of chasing down quotes, losing trucks, and explaining your lanes to a
             new rep every month? Elephant Cargo is the freight brokerage that treats your
-            shipments like they&apos;re the only ones that matter — because to us, they
+            shipments like they&apos;re the only ones that matter. Because to us, they
             are.
           </p>
           <div className="page-hero-actions reveal">
@@ -186,8 +186,8 @@ export default function ShippersPage() {
             {[
               ["fa-dollar-sign", "Rates That Make Sense", "We price loads based on actual market conditions, not padded margins. Fair rates, transparent breakdowns, no games."],
               ["fa-satellite-dish", "Real-Time Visibility", "Live GPS tracking, automated milestone alerts, and proactive updates the moment anything deviates from the plan."],
-              ["fa-user-check", "Vetted Carriers Only", "Authority, insurance, CSA scores, and service history — every carrier passes our vetting before they touch your load."],
-              ["fa-headset", "24/7 Operations", "Our dispatch team never sleeps. Emergencies, after-hours pickups, weekend runs, holidays — we&apos;re always on."],
+              ["fa-user-check", "Vetted Carriers Only", "Authority, insurance, CSA scores, and service history. Every carrier passes our vetting before they touch your load."],
+              ["fa-headset", "24/7 Operations", "Our dispatch team never sleeps. Emergencies, after-hours pickups, weekend runs, holidays. We&apos;re always on."],
               ["fa-file-contract", "Flexible Billing", "Net-30, EDI, consolidated invoicing, or custom terms to match how your accounting team works."],
               ["fa-user-tie", "Dedicated Broker", "One point of contact who knows your business by heart. No pass-offs, no re-explaining, no stranger answering your calls."],
             ].map(([icon, title, desc]) => (
@@ -242,7 +242,7 @@ export default function ShippersPage() {
           </div>
           <div className="process-grid process-grid-4">
             {[
-              { step: "01", icon: "fa-paper-plane", title: "Tell Us the Load", desc: "Shoot us a quote request — lanes, commodity, equipment, pickup window. Web form, email, or phone. You pick." },
+              { step: "01", icon: "fa-paper-plane", title: "Tell Us the Load", desc: "Shoot us a quote request with lanes, commodity, equipment, and pickup window. Web form, email, or phone. You pick." },
               { step: "02", icon: "fa-magnifying-glass-chart", title: "We Shop the Market", desc: "Our team sources the best carrier at the right price from our vetted network. You get a real quote in under 60 minutes." },
               { step: "03", icon: "fa-truck", title: "Carrier Dispatched", desc: "We book the load, send you tracking details, and hand off the driver&apos;s direct line. No blind handoffs." },
               { step: "04", icon: "fa-box-check", title: "Delivered + Invoiced", desc: "Live tracking from pickup to POD. Proactive updates on any issues. Automated invoicing and reporting." },
@@ -270,7 +270,7 @@ export default function ShippersPage() {
                 Human Touch<br />Meets Modern Tech
               </h2>
               <p className="body-text">
-                The brokerage business is still a people business — but the right
+                The brokerage business is still a people business. But the right
                 technology makes every person on our team ten times more effective. Here&apos;s
                 what&apos;s working behind the scenes on every one of your loads.
               </p>
@@ -325,7 +325,7 @@ export default function ShippersPage() {
               <h2 className="heading-lg">Ready for a Broker That Gets It?</h2>
               <p className="body-text">
                 Get a real quote from a real person in under an hour. No sales scripts, no
-                obligations — just a straight answer on what it takes to move your freight.
+                obligations. Just a straight answer on what it takes to move your freight.
               </p>
             </div>
             <div className="cta-banner-actions">

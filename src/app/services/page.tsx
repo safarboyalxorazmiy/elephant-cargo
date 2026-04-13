@@ -33,9 +33,9 @@ const CheckIcon = () => (
 );
 
 export const metadata: Metadata = {
-  title: "Logistics Services — FTL, LTL, Flatbed, Reefer, Expedited, Drayage",
+  title: "Logistics Services: FTL, LTL, Flatbed, Reefer, Expedited, Drayage",
   description:
-    "End-to-end freight brokerage across every mode and every lane. FTL, LTL, flatbed, refrigerated, expedited, and drayage — one call, one team, one invoice.",
+    "End-to-end freight brokerage across every mode and every lane. FTL, LTL, flatbed, refrigerated, expedited, and drayage. One call, one team, one invoice.",
 };
 
 const SERVICES = [
@@ -47,7 +47,7 @@ const SERVICES = [
     image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=1200&q=80",
     imageAlt: "Full truckload semi truck on highway",
     intro:
-      "When your shipment fills a trailer — or when your freight simply can&apos;t share space with anything else — our FTL service delivers dedicated capacity straight from origin to destination. One truck. One driver. One set of hands. Zero cross-docks, zero intermediate stops, zero handling risk.",
+      "When your shipment fills a trailer, or when your freight simply can&apos;t share space with anything else, our FTL service delivers dedicated capacity straight from origin to destination. One truck. One driver. One set of hands. Zero cross-docks, zero intermediate stops, zero handling risk.",
     features: [
       "Dry van, 53&apos; trailers with air-ride suspension",
       "Point-to-point direct delivery, no consolidation",
@@ -73,7 +73,7 @@ const SERVICES = [
       "Liftgate, inside delivery, and residential services",
       "Pallet-level tracking and proof of delivery",
       "Consolidation and distribution programs",
-      "Damage claims handled in-house — no runaround",
+      "Damage claims handled in-house with no runaround",
     ],
     tags: ["Less Than Truckload", "Palletized", "Regional", "National"],
   },
@@ -85,7 +85,7 @@ const SERVICES = [
     image: "https://images.unsplash.com/photo-1581362072978-14998d01fdaa?auto=format&fit=crop&w=1200&q=80",
     imageAlt: "Flatbed with heavy equipment",
     intro:
-      "Steel coils, construction machinery, lumber, pipe, prefab structures — anything that can&apos;t squeeze inside a dry van. Our flatbed and open-deck network includes step-decks, RGNs, Conestogas, and stretch trailers, backed by carriers who know how to secure, tarp, and permit your freight to every state in the country.",
+      "Steel coils, construction machinery, lumber, pipe, prefab structures. If it can&apos;t squeeze inside a dry van, we&apos;ve moved it. Our flatbed and open-deck network includes step-decks, RGNs, Conestogas, and stretch trailers, backed by carriers who know how to secure, tarp, and permit your freight to every state in the country.",
     features: [
       "Standard flatbed, step-deck, double-drop, and RGN equipment",
       "Conestoga and curtain-side for weather-sensitive freight",
@@ -104,7 +104,7 @@ const SERVICES = [
     image: "https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=1200&q=80",
     imageAlt: "Refrigerated trailer loading",
     intro:
-      "Cold-chain freight is unforgiving — one temperature excursion and the whole load is gone. Our reefer program runs on FSMA-compliant carriers with continuous temperature monitoring, pre-cool verification, and real-time alerts if anything drifts out of spec. Produce, protein, dairy, frozen, pharma — we move it all.",
+      "Cold-chain freight is unforgiving. One temperature excursion and the whole load is gone. Our reefer program runs on FSMA-compliant carriers with continuous temperature monitoring, pre-cool verification, and real-time alerts if anything drifts out of spec. Produce, protein, dairy, frozen, pharma. We move it all.",
     features: [
       "Continuous temperature monitoring and data logging",
       "Pre-cool verification before every pickup",
@@ -123,7 +123,7 @@ const SERVICES = [
     image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
     imageAlt: "Expedited delivery truck",
     intro:
-      "When the line is about to go down, when the jobsite is waiting, when the customer needs it yesterday — expedited freight is the call. We activate sprinter vans, straight trucks, and team-driver dry vans with guaranteed pickup and delivery windows. 24/7 dispatch. Zero stops. Maximum hustle.",
+      "When the line is about to go down, when the jobsite is waiting, when the customer needs it yesterday: expedited freight is the call. We activate sprinter vans, straight trucks, and team-driver dry vans with guaranteed pickup and delivery windows. 24/7 dispatch. Zero stops. Maximum hustle.",
     features: [
       "Cargo vans, sprinters, straight trucks, and team dry vans",
       "Guaranteed pickup and delivery windows",
@@ -142,7 +142,7 @@ const SERVICES = [
     image: "https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1200&q=80",
     imageAlt: "Port shipping containers",
     intro:
-      "Moving containers from port to warehouse or rail yard to customer takes more than a truck — it takes chassis management, customs coordination, and someone watching the demurrage clock. Our drayage and intermodal service covers every major US port and rail ramp, with rate programs that blend truck and rail for the best possible total cost.",
+      "Moving containers from port to warehouse or rail yard to customer takes more than a truck. It takes chassis management, customs coordination, and someone watching the demurrage clock. Our drayage and intermodal service covers every major US port and rail ramp, with rate programs that blend truck and rail for the best possible total cost.",
     features: [
       "Port-to-door and rail-to-door container transport",
       "Chassis pools and container tracking",
@@ -199,7 +199,7 @@ export default function ServicesPage() {
           </h1>
           <p className="page-hero-desc reveal">
             From a single pallet in Columbus to coast-to-coast project freight, Elephant
-            Cargo delivers the right equipment, the right carrier, and the right result —
+            Cargo delivers the right equipment, the right carrier, and the right result on
             every single load.
           </p>
           <div className="page-hero-actions reveal">
@@ -284,7 +284,7 @@ export default function ServicesPage() {
             </h2>
             <p className="body-text">
               Every shipment we move comes standard with visibility, insurance, vetting,
-              and reporting — no upcharges, no asterisks.
+              and reporting. No upcharges, no asterisks.
             </p>
           </div>
           <div className="value-grid">
@@ -308,7 +308,7 @@ export default function ServicesPage() {
             <div>
               <h2 className="heading-lg">Don&apos;t See Your Service?</h2>
               <p className="body-text">
-                Specialized freight, project work, white-label brokerage, custom programs —
+                Specialized freight, project work, white-label brokerage, custom programs:
                 we build solutions around what you actually need. Tell us what you&apos;re
                 moving.
               </p>

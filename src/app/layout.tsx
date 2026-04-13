@@ -21,7 +21,7 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: "Elephant Cargo LLC — Premium Freight Brokerage",
+    default: "Elephant Cargo LLC | Premium Freight Brokerage",
     template: "%s | Elephant Cargo LLC",
   },
   description:
