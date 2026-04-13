@@ -20,6 +20,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://elephantcargollc.com"),
   title: {
     default: "Elephant Cargo LLC | Premium Freight Brokerage",
     template: "%s | Elephant Cargo LLC",
