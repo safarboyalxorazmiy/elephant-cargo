@@ -29,7 +29,7 @@ export default function Home() {
       {/* ============ HERO ============ */}
       <section className="hero" id="home">
         <div className="hero-visual">
-          <video autoPlay muted loop playsInline src="/images/hero-truck.mp4" />
+          <video autoPlay muted loop playsInline src="/images/hero-warehouse.mp4" />
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-glow hero-glow-1"></div>
